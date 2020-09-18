@@ -1,0 +1,108 @@
+.footer {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #697D7F;
+
+  @media (min-width: $md) {
+    padding: 30px 0;
+  }
+
+  @media (min-width: $lg) {
+    padding: 50px 0;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: -87px;
+    left: 50%;
+    width: 80%;
+    height: 90px;
+    z-index: 10;
+    transform: translateX(-50%);
+    background-image: url('../img/bg-footer.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    @media (min-width: $sm) {
+      width: 65%;
+      top: -93px;
+      height: 95px;
+    }
+
+    @media (min-width: $md) {
+      top: -132px;
+      height: 135px;
+    }
+
+    @media (min-width: 992px) {
+      top: -172px;
+      height: 175px;
+    }
+
+    @media (min-width: $lg) {
+      top: -227px;
+      height: 230px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    row-gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: $sm) {
+      row-gap: 0;
+    }
+  }
+
+  &__logo {
+
+    @media (min-width: $sm) {
+      grid-row: span 2;
+    }
+  }
+
+  &__logo-image {}
+
+  &__phone {
+    justify-self: end;
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    &:hover,
+    &:active {
+      color: $green;
+    }
+
+    @media (min-width: $lg) {
+      font-size: 24px;
+      line-height: 37px;
+    }
+  }
+
+  &__copyright {
+    grid-column: span 2;
+    font-size: 13px;
+    line-height: 16px;
+    color: #fff;
+    text-align: center;
+
+    @media (min-width: $sm) {
+      grid-column: span 1;
+      justify-self: end;
+      text-align: left;
+    }
+
+    @media (min-width: $lg) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+}

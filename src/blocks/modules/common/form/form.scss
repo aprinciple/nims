@@ -1,0 +1,137 @@
+.form {
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+
+  @media (min-width: $lg) {
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.1));
+  }
+
+  &__wrapper {
+    display: grid;
+    padding: 20px;
+    background-color: #fff;
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0% 5%);
+
+    @media (min-width: $md) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 30px;
+      padding: 30px;
+      padding-bottom: 40px;
+      clip-path: polygon(2% 0, 100% 0, 100% 100%, 0 100%, 0% 3%);
+    }
+
+    @media (min-width: 992px) {
+      width: 730px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: $lg) {
+      column-gap: 48px;
+      padding: 40px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: $green;
+
+    @media (min-width: $md) {
+      margin-bottom: 16px;
+      font-size: 24px;
+      line-height: 37px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 25px;
+    font-size: 15px;
+    line-height: 20px;
+
+    @media (min-width: $md) {
+      margin-bottom: 0;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: $lightgreen;
+    }
+  }
+
+  &__fields {
+    display: grid;
+    row-gap: 10px;
+    
+    @media (min-width: $md) {
+      row-gap: 15px;
+      grid-row: span 2;
+      order: -1;
+    }
+  }
+
+  &__input {
+    height: 38px;
+    padding: 0 10px;
+    background-color: #EDF3F3;
+    border: none;
+    box-shadow: inset 3px 0px 0px $gold;
+    outline: none;
+    transition: box-shadow 0.3s;
+
+    @media (min-width: $md) {
+      padding: 0 15px;
+    }
+
+    &:focus {
+      box-shadow: inset 3px 0px 0px $green;
+    }
+  }
+
+  &__textarea {
+    min-height: 100px;
+    padding: 6px 10px;
+    background-color: #EDF3F3;
+    border: none;
+    box-shadow: inset 3px 0px 0px #F28E20;
+    resize: vertical;
+    outline: none;
+    transition: box-shadow 0.3s;
+
+    @media (min-width: $md) {
+      min-height: 135px;
+      padding: 6px 16px;
+    }
+
+    &:focus {
+      box-shadow: inset 3px 0px 0px $green;
+    }
+  }
+
+  &__button {
+    justify-self: center;
+    margin-top: 20px;
+    outline: none;
+
+    @media (min-width: $md) {
+      margin-top: 0;
+      justify-self: start;
+      align-self: start;
+    }
+
+    &-wrapper {
+      height: 40px;
+      padding: 0 20px;
+
+      @media (min-width: $md) {
+        height: 50px;
+        padding: 0 30px;
+      }
+
+      @media (min-width: $lg) {
+        height: 60px;
+        padding: 0 40px;
+      }
+    }
+  }
+}

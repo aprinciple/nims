@@ -1,0 +1,40 @@
+<form class="form form--post" action="/" method="POST">
+  <div class="form__wrapper">
+    <div class="form__text">
+      <h3 class="form__title">Let’s Talk!</h3>
+      <p class="form__subtitle">
+        Tell us a bit about your project and one of our project
+        managers will get in touch with you shortly!
+      </p>
+    </div>
+    <div class="form__fields">
+      <input
+        class="form__input"
+        type="text"
+        name="name"
+        placeholder="Name or Company"
+        required
+      />
+      <input
+        class="form__input"
+        type="tel"
+        name="phone"
+        pattern="[0-9]{7,11}"
+        placeholder="Contact Phone Number"
+        required
+      />
+      <textarea
+        class="form__textarea"
+        name="message"
+        placeholder="Tell us a bit about your project..."
+      ></textarea>
+    </div>
+    <button class="button form__button" type="submit">
+      <span class="button__wrapper button__wrapper--transparent form__button-wrapper">
+        <span class="button__text">
+          Submit form
+        </span>
+      </span>
+    </button>
+  </div>
+</form>
