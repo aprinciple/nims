@@ -1,4 +1,8 @@
-.animated {
+.san-hide {
+  opacity: 0;
+}
+
+.san-animated {
   animation-duration: 1s;
   animation-fill-mode: both;
 }

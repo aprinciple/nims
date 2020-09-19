@@ -17,7 +17,10 @@ const san = (opt) => {
   
       if ( entry.isIntersecting && !item.classList.contains(name) ) {
 
-        name && item.classList.add('animated', name);
+        if (name) {
+          item.classList.add('san-animated', name);
+          item.classList.remove('san-hide');
+        }
 
         if ( Number.isFinite(delay) && (delay > 0.099) ) {
           item.setAttribute('style', `animation-delay: ${delay}s`);
@@ -25,6 +28,7 @@ const san = (opt) => {
 
         once && observer.unobserve(item);
       } else {
+        item.classList.add('san-hide');
         !once && item.classList.remove(name);
       }
     });
@@ -37,6 +41,6 @@ const san = (opt) => {
 }
 
 san({
-  once: '',
+  once: true,
   threshold: ''
 });
