@@ -1,0 +1,18 @@
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fade-in-left {
+	animation-name: fade-in-left;
+}
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
