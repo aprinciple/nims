@@ -64,6 +64,7 @@ function script() {
   return src('src/js/*.js')
     .pipe(plumber())
     .pipe(webpackStream({
+      mode: "production",
       output: {
         filename: 'script.min.js',
       },
