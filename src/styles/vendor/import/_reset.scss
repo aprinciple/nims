@@ -27,6 +27,12 @@ dd {
   margin: 0;
 }
 
+/* Fixed horizontal scrolling when working animation with transform: translate */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* Set core root defaults */
 html {
   scroll-behavior: smooth;
