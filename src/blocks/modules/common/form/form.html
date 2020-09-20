@@ -1,10 +1,10 @@
 <form class="form form--post" action="/" method="POST">
   <div class="form__wrapper">
     <div class="form__text">
-      <h3 class="form__title">Let’s Talk!</h3>
-      <p class="form__subtitle">
-        Tell us a bit about your project and one of our project
-        managers will get in touch with you shortly!
+      <h3 class="form__title" data-san="fade-in-right">Let’s Talk!</h3>
+      <p class="form__subtitle" data-san="fade-in-bottom" data-san-delay="200">
+        Tell us a bit about your project and one of our project managers will
+        get in touch with you shortly!
       </p>
     </div>
     <div class="form__fields">
@@ -29,11 +29,16 @@
         placeholder="Tell us a bit about your project..."
       ></textarea>
     </div>
-    <button class="button form__button" type="submit">
-      <span class="button__wrapper button__wrapper--transparent form__button-wrapper">
-        <span class="button__text">
-          Submit form
-        </span>
+    <button
+      class="button form__button"
+      type="submit"
+      data-san="fade-in-top"
+      data-san-delay="400"
+    >
+      <span
+        class="button__wrapper button__wrapper--transparent form__button-wrapper"
+      >
+        <span class="button__text"> Submit form </span>
       </span>
     </button>
   </div>

@@ -14,7 +14,7 @@
     <header class="header">
       <div class="header__bar">
         <div class="container header__bar-wrapper">
-          <a class="logo header__logo" href="/">
+          <a class="logo header__logo" href="/" data-san="fade-in-left">
             <div class="logo__wrap">
               <img class="logo__image" src="img/logo.svg" alt="NIMS" />
             </div>
@@ -25,7 +25,9 @@
           <nav class="menu header__menu">
             <ul class="menu__list">
               <li class="menu__item">
-                <a class="menu__link menu__link--active" href="/post.html">Services</a>
+                <a class="menu__link menu__link--active" href="/post.html"
+                  >Services</a
+                >
               </li>
               <li class="menu__item">
                 <a class="menu__link" href="/post.html">Testimonials</a>
@@ -43,23 +45,35 @@
       <div class="header__promo">
         <div class="container">
           <div class="header__promo-inner">
-            <h1 class="header__promo-title">
+            <h1
+              class="header__promo-title"
+              data-san="fade-in-bottom"
+              data-san-delay="400"
+            >
               Industrial Services & Custom Fabrication
             </h1>
-            <p>The best industrial fabricators in the North East</p>
+            <div data-san="fade-in-right" data-san-delay="600">
+              <p>The best industrial fabricators in the North East</p>
+            </div>
             <div class="header__promo-buttons">
-              <a class="button" href="#">
+              <a
+                class="button"
+                href="#"
+                data-san="fade-in-bottom"
+                data-san-delay="800"
+              >
                 <div class="button__wrapper">
-                  <span class="button__text">
-                    Get a quote
-                  </span>
+                  <span class="button__text"> Get a quote </span>
                 </div>
               </a>
-              <a class="button" href="#">
+              <a
+                class="button"
+                href="#"
+                data-san="fade-in-top"
+                data-san-delay="900"
+              >
                 <div class="button__wrapper">
-                  <span class="button__text">
-                    Explore services
-                  </span>
+                  <span class="button__text"> Explore services </span>
                 </div>
               </a>
             </div>
@@ -71,17 +85,23 @@
       <div class="services">
         <div class="container">
           <div class="services__inner">
-            <h2 class="services__title">
+            <h2 class="services__title san-hide" data-san="fade-in-left">
               The right services partner can be a crucial asset for you.
             </h2>
-            <p>
-              You deserve someone who understands your mechanical equipment and
-              its needs; someone you can trust; and customer service that
-              exceeds your expectations!
-            </p>
+            <div
+              class="san-hide"
+              data-san="fade-in-bottom"
+              data-san-delay="300"
+            >
+              <p>
+                You deserve someone who understands your mechanical equipment
+                and its needs; someone you can trust; and customer service that
+                exceeds your expectations!
+              </p>
+            </div>
           </div>
           <div class="services__cards">
-            <a class="card services__card" href="#">
+            <a class="card services__card" href="#" data-san="fade-in-bottom">
               <figure class="card__figure">
                 <img
                   class="card__image"
@@ -97,7 +117,12 @@
                 </p>
               </div>
             </a>
-            <a class="card services__card" href="#">
+            <a
+              class="card services__card"
+              href="#"
+              data-san="fade-in-bottom"
+              data-san-delay="300"
+            >
               <div class="card__figure">
                 <img
                   class="card__image"
@@ -113,7 +138,12 @@
                 </p>
               </div>
             </a>
-            <a class="card services__card" href="#">
+            <a
+              class="card services__card"
+              href="#"
+              data-san="fade-in-bottom"
+              data-san-delay="600"
+            >
               <div class="card__figure">
                 <img
                   class="card__image"
@@ -135,7 +165,7 @@
       </div>
       <div class="customers">
         <div class="container">
-          <h2 class="customers__title">
+          <h2 class="customers__title san-hide" data-san="fade-in-left">
             Our awesome customers that we’ve had the pleasure of working with
           </h2>
           <div class="customers__items">
@@ -197,18 +227,19 @@
             </a>
           </div>
           <div class="customers__buttons">
-            <a class="button" href="#">
+            <a class="button san-hide" href="#" data-san="fade-in-bottom">
               <div class="button__wrapper button__wrapper--transparent">
-                <span class="button__text">
-                  Testimonials
-                </span>
+                <span class="button__text"> Testimonials </span>
               </div>
             </a>
-            <a class="button" href="#">
+            <a
+              class="button san-hide"
+              href="#"
+              data-san="fade-in-top"
+              data-san-delay="300"
+            >
               <div class="button__wrapper button__wrapper--transparent">
-                <span class="button__text">
-                  Talk with us
-                </span>
+                <span class="button__text"> Talk with us </span>
               </div>
             </a>
           </div>
@@ -217,14 +248,20 @@
       <div class="standards">
         <div class="container">
           <div class="standards__content">
-            <h2 class="standards__title">
+            <h2 class="standards__title san-hide" data-san="fade-in-left">
               The highest ASME Standards & Certification
             </h2>
-            <p>
-              We are a full-service mechanical contractor offering a wide range
-              of services, including fabrication, pipefitting & structural
-              welding, electrical, HVAC,rigging, and millwright.
-            </p>
+            <div
+              class="san-hide"
+              data-san="fade-in-bottom"
+              data-san-delay="300"
+            >
+              <p>
+                We are a full-service mechanical contractor offering a wide
+                range of services, including fabrication, pipefitting &
+                structural welding, electrical, HVAC,rigging, and millwright.
+              </p>
+            </div>
           </div>
           <div class="standards__items">
             <img class="standards__item" src="img/pic-cert-1.png" alt="Alt" />
@@ -235,9 +272,7 @@
         </div>
       </div>
       <div class="talk">
-        <div class="container">
-          @@include('../../common/form/form.html')
-        </div>
+        <div class="container">@@include('../../common/form/form.html')</div>
       </div>
     </main>
     @@include('../../common/footer/footer.html')
