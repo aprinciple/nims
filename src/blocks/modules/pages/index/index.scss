@@ -79,7 +79,6 @@ button {
   position: relative;
   display: inline-grid;
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
   user-select: none;
 
   @media (min-width: $lg) {
