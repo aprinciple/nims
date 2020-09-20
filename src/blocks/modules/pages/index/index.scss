@@ -80,10 +80,6 @@ button {
   display: inline-grid;
   text-decoration: none;
   user-select: none;
-
-  @media (min-width: $lg) {
-    font-weight: bold;
-  }
   
   &::before {
     content: '';
@@ -106,8 +102,9 @@ button {
   }
   
   &__wrapper {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 12px 15px;
     background-color: rgba(0, 45, 41, 0.5);
     border-top-left-radius: 6px;
@@ -147,11 +144,6 @@ button {
       transform: rotate(-45deg);
     }
     
-    &:hover,
-    &:active {
-      background-color: #F28E20;
-      color: #fff;
-    }
   }
 
   &__wrapper--transparent {
@@ -180,6 +172,14 @@ button {
       height: calc(100% - 3px);
       background-color: #F28E20;
     }
+  }
+
+  &:hover &__wrapper,
+  &:hover &__wrapper--transparent,
+  &:active &__wrapper,
+  &:active &__wrapper--transparent {
+    background-color: #f28e20;
+    color: #fff;
   }
 }
 
