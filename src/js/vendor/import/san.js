@@ -2,7 +2,7 @@
 const san = (opt) => {
   const root = null;
   const once = ( typeof opt.once === 'boolean' ) ? opt.once : true;
-  const threshold = ( opt.threshold >= 0.1 && opt.threshold <= 1 ) ? opt.threshold : 0.5;
+  const threshold = ( opt.threshold >= 0.1 && opt.threshold <= 1 ) ? opt.threshold : 0.25;
 
   const options = {
     root: root,
