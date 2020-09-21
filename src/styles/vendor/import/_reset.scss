@@ -51,6 +51,11 @@ ol[class] {
   list-style: none;
 }
 
+/* Delete the color of the highlight that appears over a link while it's being tapped iOS */
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;
